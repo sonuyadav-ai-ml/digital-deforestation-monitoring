@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ForestWatch AI | Satellite Deforestation Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="loading"><div class="loader-ring"></div><b>FORESTWATCH AI</b><span>Initializing satellite intelligence…</span></div>
+
+<aside class="sidebar">
+  <div class="logo"><div class="leaf-logo">⌁</div><div><strong>FORESTWATCH</strong><small>AI • EARTH INTELLIGENCE</small></div></div>
+  <div class="live"><i></i><span>LIVE SATELLITE FEED</span><b>SYNCED</b></div>
+  <nav>
+    <button class="nav active" data-page="overview">⌂ <span>Overview</span></button>
+    <button class="nav" data-page="monitor">◉ <span>Satellite Monitor</span></button>
+    <button class="nav" data-page="analysis">✦ <span>AI Analysis</span></button>
+    <button class="nav" data-page="alerts">! <span>Risk Alerts</span><em>4</em></button>
+    <button class="nav" data-page="reports">▤ <span>Reports</span></button>
+  </nav>
+  <div class="mission">
+    <small>PROJECT</small><b>Digital Monitoring of Deforestation Using Satellite Images</b>
+    <div class="mission-line"><span>AI MODEL</span><strong>ForestVision v1.0</strong></div>
+    <div class="mission-line"><span>CONFIDENCE</span><strong>94.8%</strong></div>
+  </div>
+  <footer>Prototype • B.Tech CSE AI/ML<br>Environmental Intelligence Lab</footer>
+</aside>
+
+<main>
+<header>
+  <div><div class="crumb">EARTH OBSERVATION / <span id="crumb">OVERVIEW</span></div><h1 id="title">Forest Intelligence Overview</h1></div>
+  <div class="head-right"><div class="sat-status"><i></i> Sentinel-2 style feed <b>●</b></div><div class="avatar">SY</div></div>
+</header>
+
+<section id="overview" class="page active">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="badge">AI-POWERED DEFORESTATION MONITORING</div>
+      <h2>Protect forests<br><span>from space.</span></h2>
+      <p>Detect vegetation loss, identify suspicious clearing patterns, and prioritize field verification using multi-temporal satellite intelligence.</p>
+      <div class="hero-buttons"><button class="btn green" onclick="openPage('monitor')">Launch Satellite Monitor <b>→</b></button><button class="btn ghost" onclick="openPage('analysis')">View AI Analysis</button></div>
+      <div class="trust"><span>◉ MULTI-TEMPORAL</span><span>◉ NDVI CHANGE</span><span>◉ AI CLASSIFICATION</span></div>
+    </div>
+    <div class="planet"><div class="glow"></div><div class="earth"><span></span><i></i><b></b></div><div class="orbit one"></div><div class="orbit two"></div><div class="satellite">◆</div></div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><small>MONITORED AREA</small><strong>24,680 <em>km²</em></strong><label>↑ 8.4% coverage</label></div>
+    <div class="kpi"><small>FOREST COVER</small><strong>18,426 <em>km²</em></strong><label class="warn">↓ 2.7% YoY</label></div>
+    <div class="kpi"><small>DETECTED LOSS</small><strong>4,218 <em>ha</em></strong><label class="danger">↑ 12.4% this year</label></div>
+    <div class="kpi"><small>MODEL CONFIDENCE</small><strong>94.8<em>%</em></strong><label>↑ 3.2% improved</label></div>
+  </div>
+  <div class="dash-grid">
+    <div class="card chart-card"><div class="card-head"><div><small>FOREST LOSS TREND</small><h3>Annual change detection</h3></div><span class="pill">2021 — 2026</span></div>
+      <div class="chart-area"><div class="axis"><span>5k</span><span>4k</span><span>3k</span><span>2k</span><span>1k</span><span>0</span></div><svg viewBox="0 0 700 250" preserveAspectRatio="none"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#52e092" stop-opacity=".35"/><stop offset="1" stop-color="#52e092" stop-opacity="0"/></linearGradient></defs><path d="M0,208 L140,188 L280,166 L420,143 L560,99 L700,45 L700,250 L0,250Z" fill="url(#area)"/><path d="M0,208 L140,188 L280,166 L420,143 L560,99 L700,45" fill="none" stroke="#52e092" stroke-width="4"/><g fill="#08150e" stroke="#52e092" stroke-width="3"><circle cx="0" cy="208" r="6"/><circle cx="140" cy="188" r="6"/><circle cx="280" cy="166" r="6"/><circle cx="420" cy="143" r="6"/><circle cx="560" cy="99" r="6"/><circle cx="700" cy="45" r="7"/></g></svg><div class="years"><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div></div>
+    </div>
+    <div class="card"><div class="card-head"><div><small>PRIORITY ZONES</small><h3>Requires attention</h3></div><button class="link" onclick="openPage('alerts')">View all →</button></div>
+      <div class="zone"><i class="risk high"></i><div><b>Amazonia Sector 14</b><small>2.8 km² • Clearing pattern</small></div><strong>92%</strong></div>
+      <div class="zone"><i class="risk high"></i><div><b>Western Buffer</b><small>0.7 km² • Road expansion</small></div><strong>95%</strong></div>
+      <div class="zone"><i class="risk medium"></i><div><b>North Reserve</b><small>1.2 km² • Canopy decline</small></div><strong>87%</strong></div>
+      <div class="zone"><i class="risk low"></i><div><b>East Corridor</b><small>3.4 km² • Seasonal change</small></div><strong>61%</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="monitor" class="page">
+  <div class="page-top"><div><div class="eyebrow">SATELLITE MONITOR</div><h2>Analyze a forest zone</h2><p>Upload an image or use the demonstration scene below.</p></div><button class="btn green" id="runScan">✦ Run AI Scan</button></div>
+  <div class="monitor-grid">
+    <div class="card workspace">
+      <div class="workspace-tabs"><button class="tab active">SATELLITE</button><button class="tab">NDVI</button><button class="tab">CHANGE DETECTION</button><span id="coords">23.5102° N, 78.1201° E</span></div>
+      <div class="image-stage" id="dropzone">
+        <div class="scene">
+          <div class="canopy c1"></div><div class="canopy c2"></div><div class="canopy c3"></div><div class="canopy c4"></div>
+          <div class="clearing cl1"></div><div class="clearing cl2"></div><div class="road"></div><div class="water"></div>
+          <div class="grid-lines"></div>
+          <div class="scan-box"><span>AI TARGET ZONE</span><b>●</b></div>
+          <div class="map-label ml1">ZONE A • HIGH RISK</div><div class="map-label ml2">FOREST EDGE</div>
+        </div>
+        <div class="image-overlay" id="uploadedOverlay"><img id="uploadedImage"></div>
+        <div class="stage-hud"><span>◉ LIVE VIEW</span><span id="imageName">DEMO SATELLITE SCENE</span><span>2026-10-07 • 10:42 UTC</span></div>
+        <div class="drop-prompt"><b>Drop satellite image here</b><span>or</span><label for="fileInput">Choose image</label><input id="fileInput" type="file" accept="image/*"></div>
+      </div>
+      <div class="timeline"><span>BEFORE</span><div class="track"><i></i></div><span>AFTER</span><b>2025 → 2026</b></div>
+    </div>
+    <div class="card side-analysis">
+      <div class="analysis-title"><div class="ai-mini">AI</div><div><small>SELECTED ZONE</small><h3>Amazonia Sector 14</h3></div><span class="high-badge">HIGH RISK</span></div>
+      <div class="mini-stat"><span>Estimated forest loss</span><strong id="lossVal">2.8 km²</strong></div>
+      <div class="mini-stat"><span>NDVI change</span><strong id="ndviVal">−47%</strong></div>
+      <div class="mini-stat"><span>AI confidence</span><strong id="confidenceVal">92%</strong></div>
+      <div class="meter"><div style="width:92%"></div></div>
+      <div class="evidence"><small>DETECTION EVIDENCE</small><p>✓ Persistent vegetation decline</p><p>✓ Clearing-like surface texture</p><p>✓ Nearby access-road signature</p><p>✓ Change confirmed across observations</p></div>
+      <button class="full green" onclick="openPage('analysis')">Open Detailed AI Analysis →</button>
+    </div>
+  </div>
+</section>
+
+<section id="analysis" class="page">
+ <div class="page-top"><div><div class="eyebrow">FORESTVISION AI</div><h2>Deforestation intelligence</h2><p>Evidence-based classification of observed land-cover change.</p></div><div class="confidence-box">MODEL CONFIDENCE <b id="bigConf">94.8%</b></div></div>
+ <div class="analysis-main">
+  <div class="card">
+   <div class="result-banner"><div class="result-icon">!</div><div><small>CLASSIFICATION RESULT</small><h3>TRUE DEFORESTATION LIKELY</h3><p>Observed pattern is inconsistent with normal seasonal variation.</p></div><span>HIGH RISK</span></div>
+   <div class="compare"><div class="compare-img healthy"><label>2025 • MAY</label><span>FOREST COVER</span></div><div class="change"><b>−47%</b><small>NDVI</small></div><div class="compare-img damaged"><label>2026 • MAY</label><span>CHANGE DETECTED</span></div></div>
+   <div class="evidence-grid"><div><small>NDVI CHANGE</small><b>−47%</b><span>Strong vegetation decline</span></div><div><small>BARE-SOIL SIGNAL</small><b>+68%</b><span>Clearing signature detected</span></div><div><small>TEXTURE CHANGE</small><b>+31%</b><span>Surface pattern changed</span></div><div><small>ROAD PROXIMITY</small><b>0.4 km</b><span>Potential access route</span></div></div>
+  </div>
+  <div class="card">
+   <div class="card-head"><div><small>AI DIFFERENTIATION</small><h3>Why this is flagged</h3></div></div>
+   <div class="class good"><b>✓ Natural change</b><span>Seasonal canopy variation, drought or normal vegetation cycle.</span></div>
+   <div class="class bad"><b>✕ True deforestation</b><span>Persistent clearing, bare soil, road access and abrupt canopy loss.</span></div>
+   <div class="action-box"><small>RECOMMENDED NEXT STEPS</small><ol><li>Send field verification request</li><li>Compare next satellite pass</li><li>Assess enforcement requirement</li><li>Create reforestation recovery plan</li></ol></div>
+  </div>
+ </div>
+</section>
+
+<section id="alerts" class="page">
+ <div class="page-top"><div><div class="eyebrow">RISK ALERTS</div><h2>Forest threat center</h2><p>Prioritized detections for field teams.</p></div><button class="btn ghost" onclick="toast('Alert queue exported')">Export queue</button></div>
+ <div class="card table"><div class="thead"><span>STATUS</span><span>LOCATION</span><span>DETECTION</span><span>AREA</span><span>AI SCORE</span><span>ACTION</span></div>
+  <div class="trow"><span><i class="dot red"></i>NEW</span><span><b>Amazonia Sector 14</b><small>23.51°N, 78.12°E</small></span><span>Illegal clearing</span><span>2.8 km²</span><b>92%</b><button class="mini-btn" onclick="openPage('analysis')">Investigate</button></div>
+  <div class="trow"><span><i class="dot red"></i>NEW</span><span><b>Western Buffer</b><small>22.92°N, 77.80°E</small></span><span>Road expansion</span><span>0.7 km²</span><b>95%</b><button class="mini-btn">Investigate</button></div>
+  <div class="trow"><span><i class="dot amber"></i>REVIEW</span><span><b>North Reserve</b><small>24.13°N, 78.65°E</small></span><span>Canopy decline</span><span>1.2 km²</span><b>87%</b><button class="mini-btn">Review</button></div>
+  <div class="trow"><span><i class="dot green-dot"></i>REVIEW</span><span><b>East Corridor</b><small>21.84°N, 79.02°E</small></span><span>Seasonal change</span><span>3.4 km²</span><b>61%</b><button class="mini-btn">Review</button></div>
+ </div>
+</section>
+
+<section id="reports" class="page">
+ <div class="page-top"><div><div class="eyebrow">REPORT CENTER</div><h2>Evidence & reports</h2><p>Generate a field-ready incident report from the current analysis.</p></div><button class="btn green" id="downloadReport">↓ Download Report</button></div>
+ <div class="report card"><div class="report-top"><div class="report-mark">FW</div><div><small>FORESTWATCH AI • INCIDENT REPORT</small><h3>Deforestation Assessment — Amazonia Sector 14</h3><p>Generated 07 October 2026 • Satellite observation</p></div><span>AI VERIFIED</span></div>
+ <div class="report-metrics"><div><small>LOSS</small><b>2.8 km²</b></div><div><small>NDVI CHANGE</small><b>−47%</b></div><div><small>AI CONFIDENCE</small><b>92%</b></div><div><small>RISK</small><b>HIGH</b></div></div>
+ <div class="report-body"><div><h4>Finding</h4><p>ForestWatch AI identifies a high-probability deforestation event. The detected change is spatially clustered and persistent across temporal observations.</p></div><div><h4>Evidence</h4><p>Strong NDVI decline, increased bare-soil signal, changed surface texture and proximity to an access-road signature support the classification.</p></div><div><h4>Action plan</h4><p>Field verification → enforcement assessment → conservation response → reforestation planning → follow-up satellite scan.</p></div></div>
+ <div class="report-note">Prototype demonstration • Satellite values are simulated for academic presentation and are not an official remote-sensing assessment.</div></div>
+</section>
+</main>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
